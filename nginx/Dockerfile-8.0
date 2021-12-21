@@ -45,4 +45,4 @@ RUN unzip /var/default/demo.zip -d /var/default/
 COPY docker-entrypoint.sh /docker-entrypoint.sh
 
 RUN chmod +x /docker-entrypoint.sh
-CMD /sbin/runit-wrapper & /docker-entrypoint.sh
+CMD /docker-entrypoint.sh & /sbin/runit-wrapper
